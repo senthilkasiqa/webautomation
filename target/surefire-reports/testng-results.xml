@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Surefire suite" duration-ms="11384" started-at="2019-07-10T14:49:15Z" finished-at="2019-07-10T14:49:27Z">
+    <groups>
+    </groups>
+    <test name="Surefire test" duration-ms="11384" started-at="2019-07-10T14:49:15Z" finished-at="2019-07-10T14:49:27Z">
+      <class name="com.lti.apptesting.RunnerWeb">
+        <test-method status="PASS" signature="testing()[pri:0, instance:com.lti.apptesting.RunnerWeb@4411d970]" name="testing" duration-ms="11374" started-at="2019-07-10T20:19:15Z" finished-at="2019-07-10T20:19:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testing -->
+      </class> <!-- com.lti.apptesting.RunnerWeb -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

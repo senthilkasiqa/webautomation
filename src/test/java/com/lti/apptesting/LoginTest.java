@@ -1,4 +1,4 @@
-package com.lti.test;
+package com.lti.apptesting;
 import com.lti.pagefunction.NseHomePage;
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.testng.annotations.Test;

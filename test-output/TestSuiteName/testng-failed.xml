@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="2" name="Failed suite [TestSuiteName]" parallel="tests">
+  <test name="test 1(failed)" parallel="tests">
+    <classes>
+      <class name="com.lti.apptesting.LoginTest">
+        <methods>
+          <include name="verifyNseDetails"/>
+          <include name="baseDriver"/>
+        </methods>
+      </class> <!-- com.lti.apptesting.LoginTest -->
+    </classes>
+  </test> <!-- test 1(failed) -->
+</suite> <!-- Failed suite [TestSuiteName] -->

@@ -19,11 +19,6 @@ import java.util.List;
 
 public class NseHomePage extends BaseDriver {
 
-
-    public static void main(String[] arg) throws IOException, InvalidFormatException {
-
-    }
-
     public String getTodayDate(){
         String pattern = "yyyy-MM-dd";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);

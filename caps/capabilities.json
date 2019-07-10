@@ -1,6 +1,6 @@
 {
   "chrome": {
-    "webdriver.chrome.driver": "C:\\Users\\Aarish Senthilkumar\\IdeaProjects\\webautomation\\drivers\\chromedriver.exe"
+    "webdriver.chrome.driver": "D:\Eclipse_WorkSpace\webautomation\drivers\chromedriver.exe"
   },
   "firefox": {
     "webdriver.chrome.driver": "C:\\Users\\Aarish Senthilkumar\\IdeaProjects\\webautomation\\drivers\\geckodriver.exe"
