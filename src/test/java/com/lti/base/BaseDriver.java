@@ -38,8 +38,10 @@ public class BaseDriver extends DataProviderClass {
 		 * android.get(firstKey); System.setProperty(firstKey,valueForFirstKey);
 		 */
 		
-		DesiredCapabilities capability = DesiredCapabilities.chrome();
-		capability.setCapability("jenkins.label","test");
+		System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
+		DesiredCapabilities capability=new DesiredCapabilities();
+		capability = DesiredCapabilities.chrome();
+		capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
 		/*System.setProperty("webdriver.chrome.driver",
 				"D:\\Eclipse_WorkSpace\\webautomation\\drivers\\chromedriver.exe");
