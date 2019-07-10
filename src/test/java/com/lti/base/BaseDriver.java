@@ -38,13 +38,13 @@ public class BaseDriver extends DataProviderClass {
 		 * android.get(firstKey); System.setProperty(firstKey,valueForFirstKey);
 		 */
 		
-		/*DesiredCapabilities capability = DesiredCapabilities.chrome();
+		DesiredCapabilities capability = DesiredCapabilities.chrome();
 		capability.setCapability("jenkins.label","test");
-		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);*/
-		System.setProperty("webdriver.chrome.driver",
+		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
+		/*System.setProperty("webdriver.chrome.driver",
 				"D:\\Eclipse_WorkSpace\\webautomation\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
-		driver.manage().timeouts().implicitlyWait(90, TimeUnit.MILLISECONDS);
+		driver.manage().timeouts().implicitlyWait(90, TimeUnit.MILLISECONDS);*/
 	}
 
 	public void getUrl(String url) {
