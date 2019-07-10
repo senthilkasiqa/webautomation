@@ -1,0 +1,47 @@
+{
+  "chrome": {
+    "webdriver.chrome.driver": "C:\\Users\\Aarish Senthilkumar\\IdeaProjects\\webautomation\\drivers\\chromedriver.exe"
+  },
+  "firefox": {
+    "webdriver.chrome.driver": "C:\\Users\\Aarish Senthilkumar\\IdeaProjects\\webautomation\\drivers\\geckodriver.exe"
+  },
+  "ie": {
+    "webdriver.chrome.driver": "C:\\Users\\Aarish Senthilkumar\\IdeaProjects\\webautomation\\drivers\\iedriver.exe"
+  },
+  "android": {
+    "platformName": "android",
+    "platformVersion": "7.0",
+    "automationName": "UIAutomator2",
+    "app": "https://github.com/shridharkalagi/AppiumSample/raw/master/VodQA.apk",
+    "deviceName": "android",
+    "noSign": true
+  },
+  "iOS": {
+    "platformName": "iOS",
+    "app": {
+      "simulator": "https://github.com/saikrishna321/AppiumTestDistribution/blob/master/VodQAReactNative.zip?raw=true"
+    },
+    "deviceName": "iPhone",
+    "wdaLaunchTimeout": 80000,
+    "wdaConnectionTimeout": 80000,
+    "preventWDAAttachments": true,
+    "clearSystemFiles": true,
+    "shouldUseSingletonTestManager": false,
+    "simpleIsVisibleCheck": true,
+    "maxTypingFrequency": 10
+  },
+  "hostMachines": [
+    {
+      "machineIP": "127.0.0.1",
+      "appiumServerPath": "/usr/local/lib/node_modules/appium/build/lib/main.js",
+      "simulators": [
+        {
+          "deviceName": "iPhone 6",
+          "OS": "11.4"
+        }
+      ]
+    }
+  ],
+  "ATDServiceHost":"127.0.0.1",
+  "ATDServicePort":"3000"
+}
