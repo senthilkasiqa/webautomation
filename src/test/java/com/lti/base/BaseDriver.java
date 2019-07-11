@@ -35,13 +35,12 @@ public class BaseDriver extends DataProviderClass {
 		 * android.get(firstKey); System.setProperty(firstKey,valueForFirstKey);
 		 */
 		
-		System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
 		DesiredCapabilities capability=new DesiredCapabilities();
 		capability = DesiredCapabilities.chrome();
 		capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
 		driver = new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"), capability);
-		/*System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_WorkSpace\\webautomation\\drivers\\chromedriver.exe");
+		/*System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.MILLISECONDS);*/
 	}
