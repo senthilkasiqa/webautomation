@@ -97,7 +97,6 @@ public class TestNGCreation {
 		XmlTest test = new XmlTest(suite);
 		test.setName("test 1");
 		test.setPreserveOrder("false");
-
 		test.setIncludedGroups(groupsInclude);
 		test.setExcludedGroups(groupsExclude);
 		List<XmlClass> xmlClasses = new ArrayList<>();
