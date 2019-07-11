@@ -54,4 +54,49 @@ public class LoginTest extends NseHomePage {
             }
             driver.quit();
         }
+    
+    @Test
+    public void verifyNseDetails3() throws IOException, InvalidFormatException {
+            getUrl("https://www.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm");
+            Map<String, List<String>> treeMap=new TreeMap<>(getStockValueDetails());
+            System.out.println("getStockValueDetails\n"+treeMap);
+            String filePath=System.getProperty("user.dir").split("target")[0]+"\\src\\test\\resource\\testfile1.xlsx";
+            TreeSet<String> stockNames=new TreeSet<>();
+            Set<String> keys = treeMap.keySet();
+            List<List<String>> total=new ArrayList<>();
+            for(String key: keys){
+                writeToExcel(filePath,key,treeMap.get(key));
+            }
+            driver.quit();
+        }
+    
+    @Test
+    public void verifyNseDetails1() throws IOException, InvalidFormatException {
+            getUrl("https://www.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm");
+            Map<String, List<String>> treeMap=new TreeMap<>(getStockValueDetails());
+            System.out.println("getStockValueDetails\n"+treeMap);
+            String filePath=System.getProperty("user.dir").split("target")[0]+"\\src\\test\\resource\\testfile1.xlsx";
+            TreeSet<String> stockNames=new TreeSet<>();
+            Set<String> keys = treeMap.keySet();
+            List<List<String>> total=new ArrayList<>();
+            for(String key: keys){
+                writeToExcel(filePath,key,treeMap.get(key));
+            }
+            driver.quit();
+        }
+    
+    @Test
+    public void verifyNseDetails2() throws IOException, InvalidFormatException {
+            getUrl("https://www.nseindia.com/live_market/dynaContent/live_watch/equities_stock_watch.htm");
+            Map<String, List<String>> treeMap=new TreeMap<>(getStockValueDetails());
+            System.out.println("getStockValueDetails\n"+treeMap);
+            String filePath=System.getProperty("user.dir").split("target")[0]+"\\src\\test\\resource\\testfile1.xlsx";
+            TreeSet<String> stockNames=new TreeSet<>();
+            Set<String> keys = treeMap.keySet();
+            List<List<String>> total=new ArrayList<>();
+            for(String key: keys){
+                writeToExcel(filePath,key,treeMap.get(key));
+            }
+            driver.quit();
+        }
 }

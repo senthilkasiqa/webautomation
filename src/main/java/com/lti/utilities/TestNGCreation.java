@@ -91,7 +91,8 @@ public class TestNGCreation {
 		include(groupsExclude, "EXCLUDE_GROUPS");
 		XmlSuite suite = new XmlSuite();
 		suite.setName(suiteName);
-		suite.setParallel(ParallelMode.TESTS);
+		suite.setParallel(ParallelMode.METHODS);
+		suite.setThreadCount(5);
 		suite.setVerbose(2);
 		XmlTest test = new XmlTest(suite);
 		test.setName("test 1");
