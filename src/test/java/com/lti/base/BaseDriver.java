@@ -2,16 +2,13 @@ package com.lti.base;
 
 import com.lti.capabilities.CapabilityManager;
 import com.lti.dataProvider.DataProviderClass;
-import org.json.JSONObject;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.annotations.BeforeClass;
 
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.util.concurrent.TimeUnit;
 
 public class BaseDriver extends DataProviderClass {
 
@@ -38,13 +35,13 @@ public class BaseDriver extends DataProviderClass {
 		 * android.get(firstKey); System.setProperty(firstKey,valueForFirstKey);
 		 */
 		
-		System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
+		//System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
 		DesiredCapabilities capability=new DesiredCapabilities();
-		capability = DesiredCapabilities.chrome();
 		capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
+		capability.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
 		driver = new RemoteWebDriver(new URL("http://192.168.1.103:4444/wd/hub"), capability);
-		/*System.setProperty("webdriver.chrome.driver",
-				"D:\\Eclipse_WorkSpace\\webautomation\\drivers\\chromedriver.exe");
+		
+		/*System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(90, TimeUnit.MILLISECONDS);*/
 	}
