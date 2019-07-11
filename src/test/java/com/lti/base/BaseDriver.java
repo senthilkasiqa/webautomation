@@ -38,7 +38,7 @@ public class BaseDriver extends DataProviderClass {
 		//System.setProperty("webdriver.chrome.driver",".\\drivers\\chromedriver.exe");
 		DesiredCapabilities capability=new DesiredCapabilities();
 		capability.setPlatform(org.openqa.selenium.Platform.WINDOWS);
-		capability.setBrowserName(DesiredCapabilities.chrome().getBrowserName());
+		capability.setBrowserName(DesiredCapabilities.firefox().getBrowserName());
 		
 		driver = new RemoteWebDriver(new URL(" http://localhost:4444/wd/hub"), capability);
 		
